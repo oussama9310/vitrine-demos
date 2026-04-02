@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanimax SRL — Plomberie Expertise Locale</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--primary:#00bfff;--dark:#008FBF;--light-bg:#EAF9FF;--text:#1a1a1a;--muted:#666;--white:#fff;--radius:10px;--shadow:0 4px 24px rgba(0,0,0,.10)}
+    body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--text);background:#f9f9f9;line-height:1.6}
+    .demo-banner{background:#1a1a1a;color:#f0c040;text-align:center;padding:10px 16px;font-size:.85rem;font-weight:600;letter-spacing:.03em}
+    nav{background:var(--white);box-shadow:0 2px 8px rgba(0,0,0,.07);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+    .nav-brand{font-size:1.2rem;font-weight:700;color:var(--primary);text-decoration:none}
+    .nav-category{font-size:.8rem;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.08em}
+    .hero{background:linear-gradient(135deg,var(--primary) 0%,var(--dark) 100%);color:var(--white);padding:80px 5% 72px;text-align:center}
+    .hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+    .hero .tagline{font-size:clamp(1.05rem,2.5vw,1.4rem);opacity:.92;margin-bottom:32px;font-style:italic}
+    .hero .stars{font-size:1.3rem;margin-bottom:36px;display:block;opacity:.95}
+    .rating-num{font-size:.9rem;opacity:.8}
+    .btn{display:inline-block;background:var(--white);color:var(--dark);font-weight:700;padding:14px 36px;border-radius:50px;text-decoration:none;font-size:1rem;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.22)}
+    section{padding:64px 5%}
+    section:nth-of-type(even){background:var(--light-bg)}
+    .section-title{font-size:1.6rem;font-weight:700;margin-bottom:24px;color:var(--dark);position:relative;padding-bottom:12px}
+    .section-title::after{content:'';position:absolute;bottom:0;left:0;width:48px;height:3px;background:var(--primary);border-radius:2px}
+    .about p{font-size:1.05rem;color:#333;max-width:680px;line-height:1.8}
+    .services-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:8px}
+    .services-list li{background:var(--white);border-left:4px solid var(--primary);padding:14px 18px;border-radius:var(--radius);font-weight:600;box-shadow:var(--shadow);font-size:.95rem}
+    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:8px}
+    .contact-card{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+    .contact-card .icon{font-size:1.8rem}
+    .contact-card .label{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+    .contact-card .value{font-size:1rem;font-weight:600;color:var(--text)}
+    .contact-card a{color:var(--primary);text-decoration:none}
+    .cta-strip{background:linear-gradient(135deg,var(--primary),var(--dark));color:var(--white);text-align:center;padding:64px 5%}
+    .cta-strip h2{font-size:1.8rem;font-weight:700;margin-bottom:24px}
+    .btn-white{display:inline-block;background:var(--white);color:var(--dark);font-weight:700;padding:14px 40px;border-radius:50px;text-decoration:none;font-size:1rem;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:transform .15s}
+    footer{background:#1a1a1a;color:#aaa;text-align:center;padding:28px 5%;font-size:.82rem}
+    footer strong{color:var(--white)}
+  </style>
+</head>
+<body>
+<div class="demo-banner">⚡ Site de démonstration par Vitrine Solutions — Ce site peut être le vôtre en 48h</div>
+<nav>
+  <a class="nav-brand" href="#">Sanimax SRL</a>
+  <span class="nav-category">Plombier</span>
+</nav>
+<section class="hero">
+  <h1>Sanimax SRL</h1>
+  <p class="tagline">Plomberie Expertise Locale</p>
+  <span class="stars">★★★★☆ <span class="rating-num">4.0/5</span></span>
+  <a class="btn" href="tel:065 79 14 98">Appelez-nous</a>
+</section>
+<section class="about">
+  <h2 class="section-title">À propos</h2>
+  <p>Chez Sanimax SRL, nous sommes fiers de servir Quaregnon et ses environs. Avec un service rapide et professionnel, votre satisfaction est notre priorité absolue. Faites appel à des plombiers locaux pour des solutions sur mesure.</p>
+</section>
+<section class="services-section">
+  <h2 class="section-title">Nos services</h2>
+  <ul class='services-list'><li>Dépannage d'urgence</li><li>Installation sanitaire</li><li>Réparation de canalisations</li><li>Entretien préventif</li></ul>
+</section>
+<section class="contact-section">
+  <h2 class="section-title">Nous trouver</h2>
+  <div class="contact-grid">
+    <div class="contact-card"><span class="icon">📞</span><span class="label">Téléphone</span><span class="value"><a href="tel:065 79 14 98">065 79 14 98</a></span></div>
+    <div class="contact-card"><span class="icon">📍</span><span class="label">Adresse</span><span class="value">Rue de Monsville 206, 7390 Quaregnon, Belgium</span></div>
+    <div class="contact-card"><span class="icon">🕐</span><span class="label">Horaires</span><span class="value">Lun-Sam 9h-19h</span></div>
+  </div>
+</section>
+<div class="cta-strip">
+  <h2>Prêt à nous contacter ?</h2>
+  <a class="btn-white" href="tel:065 79 14 98">Appelez-nous</a>
+</div>
+<footer>
+  <strong>Sanimax SRL</strong> — Rue de Monsville 206, 7390 Quaregnon, Belgium<br>
+  065 79 14 98 &nbsp;·&nbsp; Lun-Sam 9h-19h
+</footer>
+</body>
+</html>
